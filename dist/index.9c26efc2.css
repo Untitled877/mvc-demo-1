@@ -1,0 +1,73 @@
+#app1 {
+  border: 1px solid red;
+  width: 50vw;
+  height: 50vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+}
+body > .page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body > .page > section {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid gray;
+}
+
+#app2 .tab-bar {
+  display: flex;
+}
+
+#app2 .tab-bar > li {
+  border: 3px solid grey;
+  width: 50%;
+}
+
+#app2 .tab-bar > li.selected {
+  background: #79a2b7;
+  color: blueviolet;
+}
+
+#app2 .tab-content > li {
+  display: none;
+}
+
+#app2 .tab-content > li.active {
+  display: block;
+}
+
+#app3 > .square {
+  width: 70px;
+  height: 70px;
+  border: 3px solid red;
+  margin-top: 20vh;
+  margin-left: 10vw;
+}
+
+#app3 > .square.active {
+  transform: translateX(50px);
+  transition: linear 3s alternate;
+}
+
+/*# sourceMappingURL=index.9c26efc2.css.map */
